@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input id="display" readonly>
+
+        <section class="calc-buttons">
+
+            <div class="calc-button-rows">
+                <button onclick="clearDisplay()" class="calc-button double">
+                    C
+                </button>
+                <button onclick="appendtoDiplay('/')" class="calc-button">
+                    &divide;
+                </button>
+        </div>
+
+
+            <div class="calc-button-rows">
+                <button onclick="appendtoDiplay('7')" class="calc-button">
+                    7
+                </button>
+                <button onclick="appendtoDiplay('8')" class="calc-button">
+                    8
+                </button>
+                <button onclick="appendtoDiplay('9')" class="calc-button">
+                    9
+                </button>
+                <button onclick="appendtoDiplay('*')" class="calc-button">
+                    x
+                </button>
+        </div>
+
+
+            <div class="calc-button-rows">
+                <button onclick="appendtoDiplay('4')" class="calc-button">
+                    4
+                </button>
+                <button onclick="appendtoDiplay('5')" class="calc-button">
+                    5
+                </button>
+                <button onclick="appendtoDiplay('6')" class="calc-button">
+                    6
+                </button>
+                <button onclick="appendtoDiplay('-')" class="calc-button">
+                    &minus;
+                </button>
+        </div>
+
+            <div class="calc-button-rows">
+                <button onclick="appendtoDiplay('1')" class="calc-button">
+                    1
+                </button>
+                <button onclick="appendtoDiplay('2')" class="calc-button">
+                    2
+                </button>
+                <button onclick="appendtoDiplay('3')" class="calc-button">
+                    3
+                </button>
+                <button onclick="appendtoDiplay('+')" class="calc-button">
+                    &plus;
+                </button>
+        </div>
+
+            <div class="calc-button-rows">
+                <button onclick="appendtoDiplay('0')" class="calc-button triple">
+                    0
+                </button>
+                <button onclick="caclulate()" class="calc-button">
+                    &equals;
+                </button>
+                <button onclick="appendtoDiplay('.')" class="calc-button">
+                    .
+                </button>
+        </div>
+
+
+        
+        
+        
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
